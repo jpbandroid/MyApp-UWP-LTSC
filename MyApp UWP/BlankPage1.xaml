@@ -24,6 +24,7 @@
                 <DataTemplate>
                     <Grid>
                         <Button Content="Button"/>
+                        <AppBarButton Label="App Bar Button" Icon="XboxOneConsole" />
                     </Grid>
                 </DataTemplate>
             </HubSection>
