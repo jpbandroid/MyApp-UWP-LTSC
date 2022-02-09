@@ -1,0 +1,34 @@
+﻿<Page
+    x:Class="MyApp_UWP.BlankPage4"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MyApp_UWP"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Page.BottomAppBar>
+        <CommandBar>
+            <CommandBar.Content>
+                <Grid/>
+            </CommandBar.Content>
+            <AppBarButton Icon="Accept" Label="AppBarButton"/>
+            <AppBarButton Icon="Cancel" Label="AppBarButton"/>
+        </CommandBar>
+    </Page.BottomAppBar>
+    <Page.TopAppBar>
+        <CommandBar>
+            <CommandBar.Content>
+                <Grid/>
+            </CommandBar.Content>
+            <AppBarButton x:Name="BackButton"
+                Style="{StaticResource NavigationBackButtonNormalStyle}"
+                ToolTipService.ToolTip="Back" Click="goback"/>
+            <AppBarToggleButton Icon="Accept" Label="AppBarButton"/>
+            <AppBarToggleButton Icon="Cancel" Label="AppBarButton"/>
+        </CommandBar>
+    </Page.TopAppBar>
+
+    <Grid>
+    </Grid>
+</Page>
